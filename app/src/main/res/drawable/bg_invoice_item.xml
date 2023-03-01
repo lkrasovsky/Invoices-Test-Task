@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/primaryLightColor" />
+    <corners
+        android:bottomLeftRadius="@dimen/bgInvoiceItemCornerRadius"
+        android:bottomRightRadius="@dimen/bgInvoiceItemCornerRadius"
+        android:topLeftRadius="@dimen/bgInvoiceItemCornerRadius"
+        android:topRightRadius="@dimen/bgInvoiceItemCornerRadius" />
+</shape>

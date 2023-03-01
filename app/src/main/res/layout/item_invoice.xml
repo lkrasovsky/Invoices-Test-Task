@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ir.beigirad.zigzagview.ZigzagView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:zigzagBackgroundColor="#FF9800"
+        app:zigzagElevation="8dp"
+        app:zigzagHeight="10dp"
+        app:zigzagPaddingContent="16dp"
+        app:zigzagShadowAlpha="0.9"
+        app:zigzagSides="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/invoiceDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textColor="@color/black"
+                tools:text="12-12-12: 12-12-12" />
+
+            <TextView
+                android:id="@+id/invoiceDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/smallMargin"
+                tools:text="Lorem inspum" />
+
+            <TextView
+                android:id="@+id/totalCostTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/smallMargin"
+                tools:text="123 $" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/invoiceItemsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="3"
+                android:clipToPadding="false"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:clipChildren="false"
+                tools:listitem="@layout/item_invoice_item"/>
+
+        </LinearLayout>
+
+    </ir.beigirad.zigzagview.ZigzagView>
+
+</RelativeLayout>
+
+
+
+
+

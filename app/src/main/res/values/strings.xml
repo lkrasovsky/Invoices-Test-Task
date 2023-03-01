@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Invoices</string>
+
+    <!-- errors -->
+    <string name="connection_error">Please check your internet connection.</string>
+    <string name="internal_error">Application internal error! Please try again later.</string>
+    <string name="backend_internal_error">Backend internal error! Please try again later.</string>
+    <string name="malformed">Malformed response! Please try again later.</string>
+    <string name="empty">Nothing found.</string>
+
+</resources>
